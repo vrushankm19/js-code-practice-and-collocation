@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            body {
+                font-family: "Lato", sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This porgram is for pattern</h1>
+        <script>
+            let aa;
+            let ab;
+            let tt = +prompt();
+
+            if (isNaN(tt)) {
+                alert(`This values is NaN Please Enter Number Only ${tt}`);
+            } else {
+                let ttnew = tt;
+                alert(`This values is Number ${ttnew}`);
+
+                for (aa = 1; aa < ttnew; aa++) {
+                    for (ab = aa; ab < ttnew; ab++) {
+                        document.write("*");
+                    }
+
+                    document.write("<br>");
+                }
+            }
+        </script>
+    </body>
+</html>

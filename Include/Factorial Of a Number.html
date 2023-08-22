@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            body {
+                font-family: "Lato", sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This porgram is for pattern</h1>
+        <script>
+            let pp = +prompt();
+            function fect(num){
+                if(num ===0 || num ===1){
+                    return 1;
+                } else{
+                for(var i = num-1; i>=1; i--){
+                    console.log(`this values is inside For Loop ${num} and index is ${i}`);
+                    num = num * i;
+                }
+                console.log(`this values is return ${num}`);    
+                return num;
+            }
+
+            }
+            console.log(fect(pp));
+        </script>
+    </body>
+</html>

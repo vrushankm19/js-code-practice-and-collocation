@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            body {
+                font-family: "Lato", sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This porgram is for pattern</h1>
+        <button onclick="loca()">Click Here..</button>
+        <button onclick="loca2()">Click Here..</button>
+        <button onclick="loca3()">Click Here..</button>
+        <script>
+            // NOTE This href and assign Work Same it create browswr back history
+            // replace is no create browswr history so we can no back to ROOT page
+            function loca(){
+                location.href="https://www.google.com"; 
+            }
+            function loca2(){
+                location.assign("https://www.google.com");
+            }
+            function loca3(){
+                location.replace("https://www.google.com");
+            }
+        </script>
+    </body>
+</html>

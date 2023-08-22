@@ -1,0 +1,12 @@
+ul,
+li {
+    list-style: none;
+}
+
+.tabs-container {
+    display: none;
+}
+
+.tabs-container.active {
+    display: block;
+}

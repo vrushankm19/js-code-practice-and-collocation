@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML, CSS and JavaScript demo</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<style type="text/css">
+    img{
+        width: 200px;
+    }
+</style>
+
+<body>
+    <!-- Start your code here -->
+
+    <img class="img-767-m" src="http://selldo.wpstaging.amura.in/v-img/1.gif" alt="">
+
+    <img class="img-767-m" src="http://selldo.wpstaging.amura.in/v-img/2.jpg" alt="">
+
+    <img class="img-767-m" src="http://selldo.wpstaging.amura.in/v-img/3.png" alt="">
+
+    <img class="img-767-m" src="http://selldo.wpstaging.amura.in/v-img/4.svg" alt="">
+
+    <img class="img-767-m" src="http://selldo.wpstaging.amura.in/v-img/5.webp" alt="">
+
+    <!-- End your code here -->
+    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+    <script type="text/javascript">
+    $(window).ready(function() {
+        var screen_width = $( window ).width();
+            if (screen_width < 767) {
+                $('.img-767-m').each(function() {
+                    var src = $(this).attr("src");
+                    $(this).attr("src", src.replace(/\.jpg$/i, "_m.jpg"));
+                });
+                $('.img-767-m').each(function() {
+                    var src = $(this).attr("src");
+                    $(this).attr("src", src.replace(/\.jpeg$/i, "_m.jpeg"));
+                });
+                $('.img-767-m').each(function() {
+                    var src = $(this).attr("src");
+                    $(this).attr("src", src.replace(/\.png$/i, "_m.png"));
+                });
+                $('.img-767-m').each(function() {
+                    var src = $(this).attr("src");
+                    $(this).attr("src", src.replace(/\.webp$/i, "_m.webp"));
+                });
+                $('.img-767-m').each(function() {
+                    var src = $(this).attr("src");
+                    $(this).attr("src", src.replace(/\.svg$/i, "_m.svg"));
+                });
+                $('.img-767-m').each(function() {
+                    var src = $(this).attr("src");  
+                    $(this).attr("src", src.replace(/\.gif$/i, "_m.gif"));
+                });
+            }
+        });
+    </script>
+
+    
+</body>
+
+</html>
