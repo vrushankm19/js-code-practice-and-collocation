@@ -61,15 +61,18 @@
 // }
 
 async function fetchData() {
-    try{
+    try {
         const response = await fetch("https://jsonplaceholder.typicode.com/albums/1/photos");
-        if(!response.ok){
+
+        if (!response.ok) {
             throw new Error("Failed to fetch data");
         }
+
         const data = await response.json();
         console.log(data);
-    } catch(error){
+    } catch (error) {
         console.log(`Error is: ${error}`);
     }
-};
+}
+
 

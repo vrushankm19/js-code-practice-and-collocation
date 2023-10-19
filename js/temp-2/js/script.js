@@ -4,6 +4,7 @@ function mainTotal(mark, gradMain) {
     });
     let wTotle = mainTotlemark / mark.length;
     gradMain(wTotle);
+    console.log(wTotle);
 }
 
 function gradMain(gradStu) {;
@@ -20,7 +21,6 @@ function gradMain(gradStu) {;
         document.getElementById("head").innerText = ww;
     }
 }
-
 
 let a = [90, 10, 90, 99, 87];
 
